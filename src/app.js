@@ -6,16 +6,16 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  let who = ["Irio", "Gaston"];
-  let action = ["da clases", "da cursos"];
-  let how = [
+  const who = ["Irio", "Gaston"];
+  const action = ["da clases", "da cursos"];
+  const how = [
     "bastante bien",
     "bastante regular",
     "muy bien",
     "de manera aceptable",
     "extremadamente bien"
   ];
-  let where = [
+  const where = [
     "a alumnos en 4Geeks",
     "a alumnos en una academia online",
     "en una escuela",
@@ -30,9 +30,7 @@ window.onload = function() {
     const howRandom = randomElement(how);
     const whereRandom = randomElement(where);
 
-    return (
-      whoRandom + " " + actionRandom + " " + howRandom + " " + whereRandom + "." // esto podria refactorizarse mejor con los $() pero no recuerdo como usarlos preguntarle a irio y gaston
-    );
+    return `${whoRandom} ${actionRandom} ${howRandom} ${whereRandom}`; // whoRandom + " " + actionRandom + " " + howRandom + " " + whereRandom + "." // esto podria refactorizarse mejor con los ${} pero no recuerdo como usarlos preguntarle a irio y gaston
   };
 
   document.getElementById("excuse").innerHTML = generateExcuse();

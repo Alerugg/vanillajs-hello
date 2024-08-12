@@ -33,7 +33,9 @@ window.onload = function() {
     return `${whoRandom} ${actionRandom} ${howRandom} ${whereRandom}`; // whoRandom + " " + actionRandom + " " + howRandom + " " + whereRandom + "." // esto podria refactorizarse mejor con los ${} pero no recuerdo como usarlos preguntarle a irio y gaston
   };
 
-  document.getElementById("excuse").innerHTML = generateExcuse();
+  document.getElementById("excuseButton").onclick = function() {
+    document.getElementById("excuse").innerHTML = generateExcuse();
+  };
 };
 
 // function generateExcuse() {

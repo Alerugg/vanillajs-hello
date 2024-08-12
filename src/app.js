@@ -31,7 +31,7 @@ window.onload = function() {
     const whereRandom = randomElement(where);
 
     return (
-      whoRandom + " " + actionRandom + " " + howRandom + " " + whereRandom + "."
+      whoRandom + " " + actionRandom + " " + howRandom + " " + whereRandom + "." // esto podria refactorizarse mejor con los $() pero no recuerdo como usarlos preguntarle a irio y gaston
     );
   };
 

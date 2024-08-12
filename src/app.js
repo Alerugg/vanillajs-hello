@@ -11,8 +11,9 @@ window.onload = function() {
   let how = [
     "bastante bien",
     "bastante regular",
-    "muy mal",
-    "de manera aceptable"
+    "muy bien",
+    "de manera aceptable",
+    "extremadamente bien"
   ];
   let where = [
     "a alumnos en 4Geeks",
